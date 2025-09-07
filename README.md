@@ -23,7 +23,6 @@ This is a modern, responsive resume website for Vincent Romanet, showcasing expe
 
 ## 📱 Contact
 - **Email**: romanetvin@gmail.com
-- **Phone**: +33 6 66 57 91 97
 - **Location**: Paris, France
 - **LinkedIn**: [Vincent Romanet](https://www.linkedin.com/in/vincent-romanet-b8a561113)
 

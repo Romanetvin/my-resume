@@ -9,288 +9,473 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Vincent Romanet</h1>
-            <h2>Ingénieur IA spécialisé en LLMs et Agents Conversationnels</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>romanetvin@gmail.com</span>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" id="floatingNav">
+        <ul>
+            <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i></a></li>
+            <li><a href="#timeline" class="nav-link"><i class="fas fa-route"></i></a></li>
+            <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i></a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch-text" data-text="Vincent Romanet">Vincent Romanet</h1>
+                <div class="typewriter">
+                    <h2>Ingénieur IA spécialisé en <span class="highlight">LLMs</span> et <span class="highlight">Agents Conversationnels</span></h2>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+33 6 66 57 91 97</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>75013, Paris</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/vincent-romanet-b8a561113" target="_blank">LinkedIn Profile</a>
+                <p class="hero-subtitle">Transformer des concepts innovants en solutions IA opérationnelles</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="1500000">0</span>
+                        <span class="stat-label">Candidats/semaine</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="95">0</span>
+                        <span class="stat-label">% Précision</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
                 </div>
             </div>
-            <div class="pdf-download">
-                <a href="CV_Vincent_ROMANET.pdf" class="pdf-link" target="_blank">📄 Télécharger CV PDF</a>
+            <div class="hero-contact">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>romanetvin@gmail.com</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/vincent-romanet-b8a561113" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a href="#contact" class="cta-button">
+                        <span>Let's Build Something Amazing</span>
+                        <div class="arrow-animation">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="CV_Vincent_ROMANET.pdf" class="pdf-download" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
             </div>
-        </header>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <section class="profile">
-            <h3><i class="fas fa-user"></i> Profil Professionnel</h3>
-            <p>Ingénieur IA spécialisé en LLMs et agents conversationnels avec 5+ années d'expérience. Expert en développement full-stack avec déploiements à grande échelle (1,5M+ candidats/semaine). Capacité démontrée à transformer des concepts innovants en solutions business opérationnelles avec impact mesurable.</p>
-            <p>Polyvalent technique maîtrisant le cycle complet du développement IA : de l'idée au déploiement production. Passionné par l'innovation technologique et l'anticipation des besoins émergents.</p>
-        </section>
-
-        <section class="experience">
-            <h3><i class="fas fa-briefcase"></i> Expériences Professionnelles</h3>
-            
-            <div class="job">
-                <div class="job-header">
-                    <h4>Actual Group | Ingénieur IA - Solutions d'Intelligence Artificielle</h4>
-                    <span class="job-date">Avril 2024 - Présent</span>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="bento-grid">
+                <div class="bento-item large-card profile-card">
+                    <div class="card-header">
+                        <i class="fas fa-user gradient-icon"></i>
+                        <h3>Profil Professionnel</h3>
+                    </div>
+                    <p>Ingénieur IA spécialisé en LLMs et agents conversationnels avec 5+ années d'expérience. Expert en développement full-stack avec déploiements à grande échelle.</p>
+                    <p>Capacité démontrée à transformer des concepts innovants en solutions business opérationnelles avec impact mesurable.</p>
+                    <div class="profile-tags">
+                        <span class="tag">Innovation</span>
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Full-Stack</span>
+                        <span class="tag">Production</span>
+                    </div>
                 </div>
                 
-                <div class="job-subsection">
-                    <h5>Solutions Déployées en Production</h5>
-                    
-                    <div class="project">
-                        <h6>Classificateur de Documents v2 <em>(Mai 2024)</em></h6>
-                        <ul>
-                            <li>Migration vers architecture deep learning moderne avec <strong>95% de précision</strong></li>
-                            <li>Extension de 10 à <strong>20+ types de documents</strong> classifiables</li>
-                            <li>Intégration production dans Lucie avec optimisation batch</li>
-                            <li><em>Technologies : Python, Deep Learning, Classification multi-classe</em></li>
-                        </ul>
+                <div class="bento-item tech-skills-card">
+                    <div class="card-header">
+                        <i class="fas fa-brain gradient-icon"></i>
+                        <h4>IA & Machine Learning</h4>
                     </div>
-
-                    <div class="project">
-                        <h6>Système de Matching Candidats/Offres <em>(Avril-Juin 2025)</em></h6>
-                        <ul>
-                            <li>Traitement de <strong>1,5M+ candidats par semaine</strong> avec contraintes de performance</li>
-                            <li>Architecture distribuée : Cloud Functions, Cloud Tasks, Elasticsearch</li>
-                            <li><strong>~3h de traitement</strong> pour embedding complet de la base candidats</li>
-                            <li>Intégration Lucie (bouton "Rechercher des candidats")</li>
-                            <li><em>Technologies : Cloud Functions, Elasticsearch, Vector Embeddings, Laravel</em></li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <h6>Assistant Juridique Intelligent <em>(Décembre 2024-Février 2025)</em></h6>
-                        <ul>
-                            <li>Solution temps réel sans RAG avec connexion directe Google Docs</li>
-                            <li>Développement full-stack : frontend chatbot + backend API Python</li>
-                            <li>Système de fallback avec redirection automatique vers ressources</li>
-                            <li><em>Déploiement groupe prévu septembre 2025</em></li>
-                            <li><em>Technologies : Python, Google Drive API, LLM Integration</em></li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <h6>OCR Cloud Function <em>(Février 2025)</em></h6>
-                        <ul>
-                            <li>Architecture asynchrone pour BigQuery BigFunctions</li>
-                            <li>Optimisation pour traitement haute volumétrie avec contraintes mémoire</li>
-                            <li>Intégration native pour prévention de fraudes</li>
-                            <li><em>Technologies : Google Cloud Functions, BigQuery, Async Processing</em></li>
-                        </ul>
+                    <div class="floating-badges" id="techBadges">
+                        <div class="tech-badge" data-tech="OpenAI GPT">
+                            <i class="fas fa-robot"></i>
+                            <span>LLMs</span>
+                        </div>
+                        <div class="tech-badge" data-tech="TensorFlow">
+                            <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow">
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-badge" data-tech="PyTorch">
+                            <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch">
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-badge" data-tech="Vector Embeddings">
+                            <i class="fas fa-search"></i>
+                            <span>Embeddings</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="job-subsection">
-                    <h5>Projets d'Innovation et R&D</h5>
-                    
-                    <div class="project">
-                        <h6>Workflows d'Agents N8N <em>(Juillet-Août 2025)</em></h6>
-                        <ul>
-                            <li>Infrastructure d'<strong>agents dynamiques</strong> créés à la volée</li>
-                            <li>Google ADK Framework avec Cloud Functions scalables</li>
-                            <li>Vision : "<em>Pour ajouter un nouvel agent, il suffit d'ajouter un nouveau prompt</em>"</li>
-                            <li>Foundation réutilisable pour l'écosystème d'agents</li>
-                            <li><em>Technologies : N8N, Google ADK, Workflow Automation</em></li>
-                        </ul>
+                <div class="bento-item dev-skills-card">
+                    <div class="card-header">
+                        <i class="fas fa-code gradient-icon"></i>
+                        <h4>Développement</h4>
                     </div>
-
-                    <div class="project">
-                        <h6>Agent Disponibilité Conversationnel <em>(Juillet-Août 2025)</em></h6>
-                        <ul>
-                            <li>Interface multi-canal : SMS, Chat, Téléphone</li>
-                            <li>Collecte intelligente d'informations candidats</li>
-                            <li>Traitement langage naturel avancé</li>
-                            <li><em>Technologies : Vapi, ElevenLabs, Twilio, N8N</em></li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <h6>Serveurs MCP avec N8N <em>(Juillet 2025)</em></h6>
-                        <ul>
-                            <li>Développement serveurs MCP (Model Context Protocol)</li>
-                            <li>Architecture modulaire et extensible pour automatisation</li>
-                            <li><em>Technologies : MCP, N8N, Tool Integration</em></li>
-                        </ul>
+                    <div class="floating-badges">
+                        <div class="tech-badge">
+                            <img src="https://skillicons.dev/icons?i=python" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-badge">
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-badge">
+                            <img src="https://skillicons.dev/icons?i=react" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-badge">
+                            <img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud">
+                            <span>GCP</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <h4>Joovence | Responsable IA/Deep Learning</h4>
-                    <span class="job-date">Janvier 2020 - Novembre 2022</span>
-                </div>
-                <div class="project">
-                    <h6>Solutions IA Médicales Déployées</h6>
-                    <ul>
-                        <li><strong>8 modèles</strong> en production pour pathologies bucco-dentaires</li>
-                        <li>Automatisation suivi patients : <strong>70% réduction</strong> charge de travail orthodontistes</li>
-                        <li>Management équipe Deep Learning et projets annotations internationaux</li>
-                        <li><em>Technologies : Python, YOLO, UNet, AWS SageMaker</em></li>
+                <div class="bento-item quick-facts-card">
+                    <div class="card-header">
+                        <i class="fas fa-lightning-bolt gradient-icon"></i>
+                        <h4>Quick Facts</h4>
+                    </div>
+                    <ul class="facts-list">
+                        <li><span class="fact-number">8</span> modèles en production</li>
+                        <li><span class="fact-number">70%</span> réduction charge travail</li>
+                        <li><span class="fact-number">20+</span> types documents classifiés</li>
+                        <li><span class="fact-number">3h</span> traitement embedding complet</li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="skills">
-            <h3><i class="fas fa-cogs"></i> Compétences Techniques</h3>
-            
-            <div class="skill-category">
-                <h4><i class="fas fa-brain"></i> Intelligence Artificielle & Machine Learning</h4>
-                <div class="tech-stack">
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=python" alt="Python" class="tech-icon">
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" class="tech-icon">
-                        <span>TensorFlow</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" class="tech-icon">
-                        <span>PyTorch</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-robot tech-icon-fa"></i>
-                        <span>OpenAI GPT</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-comments tech-icon-fa"></i>
-                        <span>Agents IA</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-search tech-icon-fa"></i>
-                        <span>Vector Embeddings</span>
+    <!-- Interactive Timeline -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-route gradient-icon"></i>
+                <h2>Mon Parcours Professionnel</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item active" data-year="2024">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Actual Group</h3>
+                        <span class="timeline-date">Avril 2024 - Présent</span>
+                        <p>Ingénieur IA - Solutions d'Intelligence Artificielle</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement-tag">1.5M+ candidats/semaine</div>
+                            <div class="achievement-tag">95% précision</div>
+                            <div class="achievement-tag">Assistant Juridique IA</div>
+                        </div>
                     </div>
                 </div>
-                <ul>
-                    <li><strong>LLMs</strong> : OpenAI GPT, Gemini, Prompt Engineering avancé, Structured Output</li>
-                    <li><strong>Agents IA</strong> : CrewAI, N8N, MCP (Model Context Protocol), Agents conversationnels</li>
-                    <li><strong>Vector Embeddings</strong> : Recherche sémantique, Matching à grande échelle, FAISS</li>
-                    <li><strong>Deep Learning</strong> : Classification, Computer Vision, Segmentation (YOLO, UNet)</li>
-                    <li><strong>Voice AI</strong> : Vapi, ElevenLabs, Twilio, interfaces conversationnelles</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h4><i class="fas fa-code"></i> Développement & Architectures</h4>
-                <div class="tech-stack">
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" class="tech-icon">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" class="tech-icon">
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=php" alt="PHP" class="tech-icon">
-                        <span>PHP</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=react" alt="React" class="tech-icon">
-                        <span>React</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" class="tech-icon">
-                        <span>Laravel</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud" class="tech-icon">
-                        <span>Google Cloud</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="tech-icon">
-                        <span>AWS</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="tech-icon">
-                        <span>Docker</span>
+                
+                <div class="timeline-item" data-year="2020">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Joovence</h3>
+                        <span class="timeline-date">Janvier 2020 - Novembre 2022</span>
+                        <p>Responsable IA/Deep Learning</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement-tag">8 modèles production</div>
+                            <div class="achievement-tag">70% réduction charge</div>
+                            <div class="achievement-tag">Management équipe</div>
+                        </div>
                     </div>
                 </div>
-                <ul>
-                    <li><strong>Langages</strong> : Python, JavaScript, TypeScript, PHP</li>
-                    <li><strong>Frameworks</strong> : TensorFlow, Keras, PyTorch, Scikit-learn, React, Laravel</li>
-                    <li><strong>Cloud & Infrastructure</strong> : Google Cloud (Functions, Tasks, BigQuery, ADK), AWS (SageMaker, S3)</li>
-                    <li><strong>Bases de Données</strong> : Elasticsearch, FAISS, Vector Databases</li>
-                    <li><strong>APIs & Intégrations</strong> : Google Workspace (Drive, Gmail, Calendar), OAuth, REST APIs</li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="achievements">
-            <h3><i class="fas fa-trophy"></i> Réalisations Clés & Métriques</h3>
+                <div class="timeline-item" data-year="2019">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CY Tech</h3>
+                        <span class="timeline-date">2013-2019</span>
+                        <p>Diplôme d'Ingénieur - Spécialisation IA</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement-tag">Mathématiques/Informatique</div>
+                            <div class="achievement-tag">Intelligence Artificielle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Bento Grid -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-cogs gradient-icon"></i>
+                <h2>Compétences & Technologies</h2>
+            </div>
+            <div class="skills-bento">
+                <div class="skill-card primary-skill">
+                    <h3>Intelligence Artificielle</h3>
+                    <div class="skill-content">
+                        <div class="tech-grid">
+                            <div class="tech-item pulse-on-hover">
+                                <img src="https://skillicons.dev/icons?i=python" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item pulse-on-hover">
+                                <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow">
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item pulse-on-hover">
+                                <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch">
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="tech-item pulse-on-hover">
+                                <i class="fas fa-robot"></i>
+                                <span>LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Cloud & Infrastructure</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud">
+                            <span>GCP</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=aws" alt="AWS">
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=docker" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Frontend & Frameworks</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=react" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card highlight-card">
+                    <h4>Voice & Conversational AI</h4>
+                    <div class="voice-skills">
+                        <div class="voice-item">
+                            <i class="fas fa-microphone"></i>
+                            <span>Vapi</span>
+                        </div>
+                        <div class="voice-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>ElevenLabs</span>
+                        </div>
+                        <div class="voice-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Agents IA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-trophy gradient-icon"></i>
+                <h2>Réalisations Clés</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-number" data-target="1500000">0</div>
+                    <div class="achievement-label">Candidats traités par semaine</div>
+                    <div class="achievement-description">Architecture distribuée haute performance</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="achievement-number" data-target="95">0</div>
+                    <div class="achievement-label">% de précision en production</div>
+                    <div class="achievement-description">Classification documents deep learning</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="achievement-number" data-target="8">0</div>
+                    <div class="achievement-label">Modèles déployés en production</div>
+                    <div class="achievement-description">Solutions médicales IA</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="achievement-number" data-target="70">0</div>
+                    <div class="achievement-label">% de réduction charge travail</div>
+                    <div class="achievement-description">Automatisation processus orthodontistes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2>Prêt à transformer vos idées en solutions IA ?</h2>
+                    <p>Discutons de votre prochain projet et explorons comment l'intelligence artificielle peut révolutionner votre business.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:romanetvin@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>romanetvin@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vincent-romanet-b8a561113" target="_blank" class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:romanetvin@gmail.com" class="main-cta">
+                        <span>Let's Build Something Amazing</span>
+                        <div class="cta-animation">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-background"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Vincent Romanet - Ingénieur IA spécialisé en LLMs et Agents Conversationnels</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Animated counters
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 200;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 10);
+        }
+
+        // Trigger animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number, .achievement-number');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        animateCounter(counter, target);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hero-stats, .achievements-grid').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Floating navigation active state
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
             
-            <div class="achievement-category">
-                <h4>Performance & Scale</h4>
-                <ul>
-                    <li><strong>1,5M+ candidats</strong> traités par semaine avec optimisation performance</li>
-                    <li><strong>~3h traitement</strong> embedding complet base candidats (contrainte critique)</li>
-                    <li><strong>95% précision</strong> classification documents en production</li>
-                    <li><strong>8 modèles</strong> déployés en production (pathologies dentaires)</li>
-                </ul>
-            </div>
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-            <div class="achievement-category">
-                <h4>Impact Business</h4>
-                <ul>
-                    <li><strong>70% réduction</strong> charge de travail orthodontistes</li>
-                    <li><strong>20+ types documents</strong> classifiables (vs. 10 initialement)</li>
-                    <li>Élimination saisie manuelle processus relevé d'heures</li>
-                    <li>Accélération sourcing candidats avec matching intelligent</li>
-                </ul>
-            </div>
-        </section>
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
 
-        <section class="education">
-            <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
-            <div class="education-item">
-                <h4>CY Tech, Cergy-Préfecture <span class="education-date">(2013-2019)</span></h4>
-                <p>Diplôme d'Ingénieur en Mathématiques/Informatique</p>
-                <p><strong>Spécialisation Intelligence Artificielle</strong></p>
-            </div>
-            <div class="education-item">
-                <h4>GEM, Grenoble <span class="education-date">(2017-2018)</span></h4>
-                <p>Année supplémentaire - Spécialisation Management</p>
-            </div>
-            <div class="education-item">
-                <h4>ESSEC Asia Pacific, Singapour <span class="education-date">(2016)</span></h4>
-                <p>Échange universitaire</p>
-            </div>
-        </section>
-
-        <section class="languages">
-            <h3><i class="fas fa-language"></i> Langues</h3>
-            <ul>
-                <li><strong>Français</strong> : Langue maternelle</li>
-                <li><strong>Anglais</strong> : Avancé (management équipes internationales, projets anglophones)</li>
-                <li><strong>Chinois</strong> : Intermédiaire</li>
-            </ul>
-        </section>
-
-        <footer class="footer">
-            <p>© 2025 Vincent Romanet - Ingénieur IA</p>
-        </footer>
-    </div>
+        // Tech badges mouse follow effect
+        document.addEventListener('mousemove', (e) => {
+            const badges = document.querySelectorAll('#techBadges .tech-badge');
+            badges.forEach((badge, index) => {
+                const speed = (index + 1) * 0.02;
+                const x = (e.clientX * speed) / 100;
+                const y = (e.clientY * speed) / 100;
+                badge.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        });
+    </script>
 </body>
 </html>
