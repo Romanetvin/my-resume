@@ -100,6 +100,11 @@ body {
     color: white;
 }
 
+.flag-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
 /* Navigation - Clean Fixed Header */
 .floating-nav {
     position: fixed;
