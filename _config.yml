@@ -1,0 +1,44 @@
+# GitHub Pages Configuration for Vincent Romanet Resume
+
+# Site settings
+title: "Vincent Romanet - Ingénieur IA"
+description: "Vincent Romanet - Ingénieur IA spécialisé en LLMs et Agents Conversationnels"
+author: "Vincent Romanet"
+email: "romanetvin@gmail.com"
+location: "75013, Paris"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# SEO and social media
+lang: fr
+twitter:
+  username: 
+linkedin:
+  username: 
+
+# GitHub Pages theme (optional - using custom CSS)
+theme: 
+
+# Custom variables
+resume:
+  name: "Vincent Romanet"
+  title: "Ingénieur IA spécialisé en LLMs et Agents Conversationnels"
+  phone: "+33 6 66 57 91 97"
+  email: "romanetvin@gmail.com"
+  location: "75013, Paris"
+  pdf_link: "CV_Vincent_ROMANET.pdf"
