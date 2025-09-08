@@ -499,6 +499,16 @@
                 }
             });
             
+            // Update resume download link based on language
+            const pdfDownloadLink = document.querySelector('.pdf-download');
+            if (pdfDownloadLink) {
+                if (lang === 'en') {
+                    pdfDownloadLink.href = 'CV_Vincent_ROMANET_en.pdf';
+                } else {
+                    pdfDownloadLink.href = 'CV_Vincent_ROMANET.pdf';
+                }
+            }
+            
             // Save language preference
             localStorage.setItem('preferred-language', lang);
         }

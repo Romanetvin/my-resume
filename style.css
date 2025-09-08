@@ -917,8 +917,15 @@ section {
 }
 
 @media (max-width: 480px) {
-    .lang-btn span {
-        display: none;
+    .language-switcher {
+        top: var(--spacing-xs);
+        right: var(--spacing-xs);
+        scale: 0.9;
+    }
+    
+    .lang-btn {
+        padding: var(--spacing-xs);
+        font-size: 0.75rem;
     }
     
     .floating-nav {
