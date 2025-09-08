@@ -862,6 +862,11 @@ section {
         display: none;
     }
     
+    /* Ensure language switcher text remains visible on mobile */
+    .lang-btn span {
+        display: inline !important;
+    }
+    
     .hero-section {
         padding: calc(var(--spacing-xl) + 80px) 0 var(--spacing-xl);
     }
